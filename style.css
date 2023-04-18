@@ -1,0 +1,843 @@
+html {
+  scroll-behavior: smooth;
+}
+nav .navbar-brand {
+  color: var(--bs-orange);
+}
+.myNavabar {
+  position: sticky;
+}
+.navbar-nav .nav-link {
+  font-size: 18px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+.navbar-toggler {
+  outline: none;
+  padding: none;
+}
+@media (max-width: 767px) {
+  .social-icon {
+    display: none;
+  }
+}
+.the-school {
+  font-size: 1rem;
+}
+.course .box {
+  padding: 10px 10px;
+  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.8);
+ 
+}
+.course .bo-sizing {
+  margin-top: 7px;
+  margin-bottom: 7px;
+}
+
+/* Starting to style carousel*/
+.carousel-inner .carousel-item {
+  width: 100%;
+  height: 110vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.carousel-inner .carousel-item::before {
+  content: "";
+  background-color: rgba(12, 11, 10, 0.6);
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+
+.carousel-inner .carousel-caption {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 37%;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+.carousel-inner .carousel-caption span {
+  color: var(--bs-orange);
+}
+.carousel-inner.carousel-caption h2 {
+  color: #fff;
+  margin-bottom: 10px;
+  font-size: 42px;
+  font-weight: 600;
+  width: 80%;
+  margin: 0px auto 30px auto;
+}
+.carousel-inner .carousel-caption p {
+  color: #fff;
+  font-size: 20px;
+  width: 80%;
+  margin: 0px auto 20px auto;
+}
+.words-on-logo {
+  text-decoration: none;
+  margin-left: 10px;
+}
+.words-on-logo span {
+  color: var(--bs-orange);
+  margin-top: 20px;
+  list-style: none;
+  font-weight: 600;
+}
+.words-on-logo .big-big {
+  color: green;
+  margin-top: 20px;
+  margin-left: 10px;
+  font-size: 1.5rem;
+  letter-spacing: 2px;
+  font-family: "Times New Roman", Times, serif;
+  font-style: italic;
+}
+.words-on-logo .red {
+  color: red;
+  font-size: 1.2rem;
+}
+.words-on-logo .green {
+  color: white;
+  font-size: 1.2rem;
+}
+
+.logo-schep {
+  width: fit-content;
+  margin-left: -70px;
+}
+.logo-schep div {
+  display: inline;
+  width: fit-content;
+}
+.logo-schep .image {
+  float: left;
+}
+.logo-schep .image img {
+  border-bottom-left-radius: 50px;
+  border-bottom-right-radius: 50px;
+}
+nav #stic {
+  position: sticky;
+}
+#effect {
+  color: #fff;
+  text-transform: uppercase;
+  font-family: "Times New Roman", Times, serif;
+  border: 2px solid #fff;
+  padding: 5px 10px;
+  background-color: black;
+  transition: ease 0.4s;
+}
+#effect:hover {
+  letter-spacing: 2px;
+  border: 0.5px solid greenyellow;
+  box-shadow: 0 0 30px greenyellow;
+}
+.logo-schep .name {
+  float: right;
+}
+.introduction {
+  background: linear-gradient(
+      to top,
+      rgba(0, 0, 0, 0.7) 50%,
+      rgba(0, 0, 0, 0.7) 50%
+    ),
+    url(images/skep.jpg);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  padding: 20px;
+  height:fit-content;
+  width: 100%;
+}
+.envoyerMsg{
+  margin-top: 20px;
+}
+label {
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+a {
+  text-decoration: none;
+}
+p i .fa {
+  color: #fff;
+}
+input {
+  background-color: black;
+  color: white;
+  border-radius: 5px;
+  border: 2px solid green;
+  padding: 10px;
+}
+.all-login {
+  width: 100%;
+  height: auto;
+  background: linear-gradient(
+      to right,
+      rgba(255, 255, 255, 0.1) 15%,
+      rgba(0, 0, 0, 0.9) 85%
+    ),
+    url(images/ne.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.titles {
+  margin: 0;
+  padding: 0;
+  width: fit-content;
+  position: absolute;
+  top: 3px;
+  left: 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+.titles .signin {
+  background-color: green;
+  width: 50%;
+  height: 100%;
+  margin-right: 0;
+  padding: 8px 39px;
+  font-size: 1.3rem;
+  font-weight: bold;
+  transition: ease-in-out 0.4s;
+}
+.for-sign-up {
+  width: 100%;
+  text-align: center;
+  height: 109vh;
+  margin-top: -20px;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0.4) 50%,
+      rgba(0, 0, 0, 0.4) 50%
+    ),
+    url(images/back.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 10px;
+  color: white;
+}
+.for-sign-up .containing-form {
+  margin-top: 30px;
+  width: 30%;
+  height: 96vh;
+  background-color: rgba(0, 0, 0, 0.7);
+  transform: translateX(100%);
+  border-radius: 15px;
+}
+.sign-up-button2,
+.login-button2 {
+  width: 100%;
+  height: 50px;
+}
+.sign-up-button2 {
+  background-color: greenyellow;
+  font-weight: bold;
+  font-size: x-large;
+}
+.login-button2 {
+  background-color: #ff7200;
+  float: left;
+  margin-left: 24px;
+  width: 80%;
+  margin-top: 15px;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 20px;
+  font-weight: bold;
+  transition: ease-in-out 0.4s;
+}
+.login-button2:hover {
+  background-color: greenyellow;
+  color: #000;
+}
+
+.for-sign-up .containing-form form {
+  border: none;
+}
+.for-sign-up .containing-form form label {
+  float: left;
+  margin-top: 22px;
+  margin-left: 25px;
+}
+.for-sign-up .containing-form form input {
+  float: left;
+  width: 80%;
+  margin: 0px 0px;
+  color: #fff;
+  background-color: #000;
+  padding: 5px 5px;
+  border-left: none;
+  border-right: none;
+  border-top: none;
+  border-bottom: 1px solid white;
+  margin: 5px 25px;
+}
+.for-sign-up .containing-form form input:focus {
+  outline: none;
+}
+
+.titles .signup {
+  background-color: rgba(75, 70, 70, 0.7);
+  width: 50%;
+  height: 100%;
+  margin-left: -4px;
+  padding: 8px 30px;
+  font-size: 1.3rem;
+  font-weight: bold;
+  transition: ease-in-out 0.4s;
+}
+.liNone {
+  color: #fff;
+}
+.liNone:hover {
+  color: #ff7200;
+}
+.titles .signin:hover,
+.titles .signup:hover {
+  cursor: pointer;
+  background-color: white;
+  color: #ff7200;
+}
+.Sign-up-here {
+  color: #ff7200;
+  width: fit-content;
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+h6 {
+  margin-top: 20px;
+  font-style: italic;
+}
+.proper-login input {
+  border-bottom: 2px solid #ff7200;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-radius: 1px;
+  width: 80%;
+  margin-top: 40px;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.5);
+  font-size: 1.3rem;
+  padding: 3px;
+}
+.proper-login input:focus {
+  outline: none;
+}
+.login-button {
+  margin-top: 40px;
+  padding: 10px 50px;
+  border-radius: 50px;
+  background-color: #ff7200;
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: bold;
+  transition: ease-in-out 0.5s;
+}
+.login-button:hover {
+  background-color: #fff;
+  color: #ff7200;
+  padding: 12px 52px;
+  font-size: 1.3rem;
+}
+.galery {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.secondGalery {
+  display: flex;
+}
+.galery div {
+  margin: 10px 10px;
+  box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.5);
+
+  padding: 0;
+}
+.galery .onePic img {
+  width: 400px;
+  height: 300px;
+}
+.proper-login {
+  position: relative;
+  color: #fff;
+  float: left;
+  text-align: center;
+  width: 25%;
+  height: 70vh;
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+  margin: 10px 40px;
+  margin-right: 150px;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  padding: 20px;
+  align-items: center;
+}
+
+.full-name,
+.sous-title {
+  color: #ff7200;
+  font-weight: bold;
+  font-style: italic;
+}
+.bios {
+  font-family: Arial, Helvetica, sans-serif;
+  font-style: italic;
+  font-size: 1.1rem;
+  letter-spacing: 2px;
+}
+.login-left-side {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+.fondateur {
+  color: white;
+  font-size: 1.2rem;
+}
+
+.login-left-side div {
+  display: inline;
+}
+.infoScheppers {
+  display: inline;
+  margin-top: 15px;
+  float: right;
+  color: #fff;
+  width: 60%;
+  text-align: left;
+}
+.searc-css {
+  width: 0px;
+  height: 0px;
+  border: 0px;
+  background-color: #272525;
+  transition: ease 0.5s;
+}
+.jsCodes {
+  display: inline;
+  background-color: #242020;
+  width: 250px;
+  color: rgb(157, 153, 153) !important;
+  height: 40px;
+  font-family: Arial, Helvetica, sans-serif;
+  border-radius: 50px;
+  padding-left: 20px;
+  padding-right: 40px;
+  font-size: 1.3rem;
+  border: 1px solid rgb(109, 105, 105);
+}
+
+
+/* My currone for the logo starts from here */
+.curronne{
+  width: 150px;
+  height: 150px;
+  border: 2px solid yellow;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  box-shadow: inset 0px 0px 20px yellow;
+  transform: scale(0.5);
+
+}
+.curronne .bot{
+  position: absolute;
+  color: greenyellow;
+  font-size: 1.5em;
+  bottom: 3px;
+  font-family: "Snell Roundhand", sans-serif;
+}
+.curronne span {
+  color: rgb(255, 145, 0);
+  font-weight: 900;
+  letter-spacing: 4px;
+  color: rgb(255, 123, 0);
+  position: absolute;
+}
+.curronne .r1{
+  transform: rotateZ(-90deg);
+  margin-left: -120px;
+}
+.curronne .a1{
+  transform: rotateZ(-60deg) translateX(150%);
+  margin-left: -130px;
+}
+.curronne .j{
+  transform: rotateZ(-60deg) translateX(320%);
+  margin-left: -130px;
+}
+.curronne .a{
+  transform: rotateZ(-40deg) translateX(540%);
+  margin-left: -200px;
+  margin-top: 10px;
+  
+}
+.curronne .g{
+  transform: rotateZ(5deg) translateX(640%);
+  margin-left: -190px;
+  margin-top: -130px;
+  
+}
+.curronne .r{
+  transform: rotateZ(30deg) translateX(140%);
+  margin-top: -120px;
+  margin-left: 20px;
+
+}
+.curronne .o{
+  transform: rotateZ(55deg) translateX(240%);
+  margin-top: -140px;
+  margin-left: 40px;
+}
+.curronne .u{
+  transform: rotateZ(60deg) translateX(200%);
+  margin-top: -100px;
+  margin-left: 75px;
+}
+.curronne .p{
+  transform: rotateZ(75deg) translateX(200%);
+  margin-top: -70px;
+  margin-left: 100px;
+}
+
+.myNewLogo{
+  position: absolute;
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  border: 2px solid white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: inset 0 0 15px 2px #fff;
+}
+.myNewLogo h2{
+  color: yellow;
+  margin-left: -15px;
+  font-weight: 900;
+  font-size: 2.2rem;
+  font-family: "Snell Roundhand", sans-serif;
+}
+.myNewLogo h1{
+  color: red;
+  height: 0px;
+  margin-left: -10px;
+  margin-top: -10px;
+  font-style: oblique;
+  font-size: 2.5rem;
+  
+}
+
+/* My currone for the logo ends here */
+
+.informatiqueDetails
+.searc-css:focus {
+  outline: none;
+}
+.fa-search {
+  margin-left: -30px;
+  font-size: 1.4rem;
+  color: rgb(157, 153, 153);
+}
+.schep-profile {
+  width: fit-content;
+  float: left;
+  padding: 10px;
+}
+@media (max-width: 768px) {
+  .carousel-inner.carousel-caption h2 {
+    font-size: 30px;
+  }
+  .logo-schep .image {
+    display: none;
+  }
+  .logo-schep {
+    margin-left: -20px;
+  }
+  .for-sign-up .containing-form {
+    width: 80%;
+    margin: 0 auto;
+    transform: translateX(5%);
+  }
+  .proper-login,
+  .infoScheppers {
+    width: 80%;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 577px) {
+  .carousel-inner.carousel-caption h2 {
+    font-size: 22px;
+  }
+  .carousel-inner .carousel-caption p {
+    font-size: 13px;
+  }
+  .for-sign-up .containing-form {
+    width: 100%;
+    margin: 0 auto;
+    transform: translateX(0);
+  }
+  .proper-login,
+  .infoScheppers {
+    width: 95%;
+    margin: auto;
+  }
+}
+
+
+.imageMin {
+  height: 90px;
+}
+#secondOption {
+  padding: 4px 20px;
+  font-size: x-large;
+  border-radius: 4px;
+}
+#secondOption:hover {
+  background-color: black;
+  border: 2px solid yellow;
+  text-transform: uppercase;
+  color: yellow;
+  font-size: larger;
+}
+.propos {
+  font-size: 25px;
+  width: 700px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.propos span,
+.propos strong {
+  font-weight: bold;
+  font-size: 30px;
+}
+#mo{
+  width: 100%;
+  text-align: right;
+  color: #fff;
+  float: right;
+  font-size: xx-large;
+  font-weight: bold;
+}
+.aboutMore {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  color: #fff;
+  height: 540%;
+  padding: 20px 100px;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 2;
+}
+.aboutMore .inside{
+  background-color: #fff;
+  color: #000;
+  width: 50%;
+  margin-left: 25%;
+  padding: 10px 20px;
+}
+
+.aboutMore p {
+  font-size: 1.4rem;
+}
+
+#mo:hover {
+  cursor: pointer;
+}
+#previousbtn {
+  background-color: grey;
+  color: yellow;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: 7px 10px;
+  border-radius: 4px;
+  transition: ease-in-out 0.4s;
+}
+.retourMin {
+  display: none;
+}
+
+@media (max-width: 1000px) {
+  .retourMin {
+    display: block;
+  }
+}
+#previousbtn:hover {
+  background-color: green;
+  color: yellow;
+}
+@media (max-width: 1000px) {
+  .proper-login,
+  .infoScheppers {
+    width: 95%;
+    margin: auto;
+  }
+  .schep-profile{
+    margin-left: 15%;
+  }
+  .showNow {
+    width: 100%;
+    padding: 20px 20px;
+    margin: 0;
+  }
+
+  .carousel-inner .carousel-item {
+    height: 40vh;
+  }
+  .propos{
+    font-size: 1.3rem;
+    width: auto;
+  }
+  .numbers1, .numbers2{
+    font-size: 1rem;
+  }
+  .all-login{height: auto;}
+ 
+  #effect {
+    width: 100%;
+  }
+  div .image img {
+    display: none;
+  }
+  .logo-schep {
+    margin-left: 50px;
+  }
+}
+.register-form {
+  display: flex;
+  flex-wrap: wrap;
+}
+.myCards{
+  position: relative;
+}
+.informatiqueDetails,
+ .biochemistry,
+ .pedago,
+ .math-physique,
+ .lettre,
+ .education-physique{
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+}
+h5{
+  text-align: center;
+}
+.informatiqueDetails div{
+  background-color: #fff;
+  color: #000;
+  width: 60%;
+  height: fit-content;
+  margin-left: 20%;
+  padding: 5% 10%;
+  margin-top: 10%;
+}
+.informatiqueDetails div p{
+  font-size: larger;
+}
+.informatiqueDetails a{
+ font-size: xx-large;
+ color: #fff;
+ float: right;
+ margin: 5px 50px;
+}
+.informatiqueDetails a:hover{
+  font-weight: bold;
+}
+@media(max-width:1000px){
+  .informatiqueDetails div{
+    margin-top: 70px;
+    width: 95%;
+    margin-left: 2%;
+    padding: 2% 5%;
+    
+  }
+}
+#course .jodd{
+  position: relative;
+}
+.showNow {
+  display: block;
+  position: absolute;
+  animation: showmore 1s ease-out;
+}
+
+@keyframes showmore {
+  0% {
+    transform: skew(80deg) scale(0.3);
+  }
+  10% {
+    transform: scale(0.5);
+  }
+
+  100% {
+    transform: skew(0deg);
+  }
+}
+@media (max-width: 480px) {
+  .carousel-inner.carousel-caption h2 {
+    font-size: 20px;
+  }
+  .proper-login,
+  .infoScheppers {
+    width: 95%;
+    margin: auto;
+  }
+  .titles .signin{
+    width: 100%;
+    margin-top: 10px;
+  }
+  .all-login{
+    height: fit-content;
+    width: 100%;
+  }
+  .aboutMore{
+    height: auto;
+  }
+  .titles{
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -10px;
+  }
+  .titles .signup{
+    width: 100%;
+    display: absolute;
+    top: 20px;
+  }
+  .aboutMore .inside {
+    width: 100%;
+    margin-left: 0%;
+    margin-top: 15%;
+    height: auto;
+  }
+  .aboutMore p{
+    font-size: 1rem;
+  }
+  #mo{
+    margin-top:-50px;
+  }
+  
+}
